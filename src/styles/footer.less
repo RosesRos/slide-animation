@@ -1,0 +1,162 @@
+.footer {
+    float: right;
+    overflow: hidden;
+    padding-top: 23.6rem;
+    padding-right: 13rem;
+    @media (max-width: @desktop) {
+        padding-top: 15rem;
+        padding-right: 10rem;
+    }
+    @media (max-width: @laptop) {
+        padding-right: 5rem;
+        padding-top: 15rem;
+    }
+    @media (max-width: @mobile-landscape) and (orientation: landscape) {
+        padding-right: 2rem;
+        padding-top: 8rem;
+    }
+    @media (max-width: @mobile-sm-landscape) {
+        padding-top: 3rem;
+        padding-right: 2rem;
+    }
+    @media (max-width: @mobile) {
+        display: none;
+    }
+    &_list {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 2rem;
+        list-style: none;
+        @media (max-width: @mobile-sm-landscape) {
+            gap: 1rem;
+        }
+        &_link {
+            display: block;
+            font-size: 1.6rem;
+            line-height: 2rem;
+            font-style: normal;
+            text-decoration: none;
+            color: @white;
+            text-transform: uppercase;
+            position: relative;
+            -webkit-transition: all .2s linear;
+            -o-transition: all .2s linear;
+            -moz-transition: all .2s linear;
+            -ms-transition: all .2s linear;
+            transition: all .2s linear;
+            &::after {
+                display: block;
+                content: '';
+                position: absolute;
+                bottom: -0.5rem;
+                left: 0;
+                z-index: 1;
+                -webkit-background: #4d4a4a;
+                -o-background: #4d4a4a;
+                -moz-background: #4d4a4a;
+                -ms-background: #4d4a4a;
+                background: #4d4a4a;
+                border-radius: 2rem;
+                width: 100%;
+                height: 0.2rem;
+                opacity: 0;
+                -webkit-transition: opacity .2s linear;
+                -o-transition: opacity .2s linear;
+                -moz-transition: opacity .2s linear;
+                -ms-transition: opacity .2s linear;
+                transition: opacity .2s linear;
+            }
+            &:hover::after {
+                opacity: 1;
+            }
+        }
+    }
+    &_icons {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 2.3rem;
+        list-style: none;
+        @media (max-width: @mobile-sm-landscape) {
+            gap: 1.3rem;
+        }
+        &_item {
+            cursor: pointer;
+            display: block;
+        }
+        &_facebook {
+            display: block;
+            width: 2.4rem;
+            height: 2.4rem;
+            background-image: url(../assets/facebook.svg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+        }
+        &_instagram {
+            display: block;
+            width: 2.4rem;
+            height: 2.4rem;
+            background-image: url(../assets/instagram.svg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+        }
+        &_youtube {
+            display: block;
+            width: 2.4rem;
+            height: 2.4rem;
+            background-image: url(../assets/youtube.svg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+        }
+    }
+}
+
+
+@-webkit-keyframes animate_footer {
+    0% {
+        opacity: 0;
+        transform: translateY(100px);
+        -webkit-transform: translateY(100px);
+    }
+    100% {
+        opacity: 1;
+        transform: none;
+        -webkit-transform: none;
+    }
+}
+
+@keyframes animate_footer {
+    0% {
+        opacity: 0;
+        transform: translateY(100px);
+        -webkit-transform: translateY(100px);
+        -o-transform: translateY(100px);
+        -moz-transform: translateY(100px);
+        -ms-transform: translateY(100px);
+    }
+    100% {
+        opacity: 1;
+        transform: none;
+        -webkit-transform: none;
+        -o-transform: none;
+        -moz-transform: none;
+        -ms-transform: none;
+    }
+}
+.animate_footer {
+    animation-name: animate_footer;
+    -webkit-animation-name: animate_footer;
+    -o-animation-name: animate_footer;
+    -moz-animation-name: animate_footer;
+    -ms-animation-name: animate_footer;
+}
+
+.slick-active .slide-footer {
+    animation-name: animate_footer;
+    animation-duration: 2s;
+    opacity: 1;
+}

@@ -1,0 +1,91 @@
+extends ../layout/default.pug 
+
+block title 
+    title Bake & Taste
+
+block content 
+
+    section.section(id="banner")
+        .container 
+            .section_inner 
+                .section_content 
+                    .swiper 
+                        .swiper-wrapper(data-arrows="true", data-autoplay="true") 
+                            .swiper-slide
+                                include ../partials/header.pug
+                                .swiper-slide_background_1
+                                .swiper-slide_content 
+                                    .main.slide-content 
+                                        h1.main_experience experience 
+                                        h1.main_sensation fruity sensation! 
+                                        a(href="#").main_button  
+                                            button.btn.btn-primary.btn_sensation shop now 
+                                    .sensation_img_1.slide-content-img 
+                                        img(src="./assets/marketing/sensation.png", alt="Sensation Icecream")
+                                    .description.slide-content-2 
+                                        .description_link 
+                                            span.description_link_now 01 / 
+                                            span.description_link_next 04 
+                                        p.description_text Lorem ipsum dolor sit amet, consectetur adipiscing elit. Adipiscing amet, interdum phasellus quis adipiscing leo pellentesque. Arcu enim arcu velit molestie. Mattis libero ornare elementum gravida imperdiet et sit. 
+                                include ../partials/footer.pug
+                                       
+                            .swiper-slide
+                                include ../partials/header.pug
+                                .swiper-slide_background_2
+                                .swiper-slide_content 
+                                    .main.slide-content 
+                                        h1.main_nuts go nuts
+                                        h1.main_sensation have some drink! 
+                                        a(href="#").main_button  
+                                            button.btn.btn-primary.btn_drink shop now 
+                                    .sensation_img_2.slide-content-img 
+                                        img(src="./assets/marketing/drink.png", alt="Sensation Icecream")
+                                    .description.slide-content-2 
+                                        .description_link 
+                                            span.description_link_now 02 / 
+                                            span.description_link_next 04 
+                                        p.description_text Lorem ipsum dolor sit amet, consectetur adipiscing elit. Adipiscing amet, interdum phasellus quis adipiscing leo pellentesque. Arcu enim arcu velit molestie. Mattis libero ornare elementum gravida imperdiet et sit. 
+                                include ../partials/footer.pug
+
+                            .swiper-slide
+                                include ../partials/header.pug
+                                .swiper-slide_background_3
+                                .swiper-slide_content 
+                                    .main.slide-content 
+                                        h1.main_supa supa fresh 
+                                        h1.main_sensation lovely cupcakes! 
+                                        a(href="#").main_button  
+                                            button.btn.btn-primary.btn_supa shop now 
+                                    .sensation_img_3.slide-content-img 
+                                        img(src="./assets/marketing/strawberry.png", alt="Sensation Icecream")
+                                    .description.slide-content-2 
+                                        .description_link 
+                                            span.description_link_now 03 / 
+                                            span.description_link_next 04 
+                                        p.description_text Lorem ipsum dolor sit amet, consectetur adipiscing elit. Adipiscing amet, interdum phasellus quis adipiscing leo pellentesque. Arcu enim arcu velit molestie. Mattis libero ornare elementum gravida imperdiet et sit. 
+                                include ../partials/footer.pug
+
+                            .swiper-slide
+                                include ../partials/header.pug
+                                .swiper-slide_background_4
+                                .swiper-slide_content 
+                                    .main.slide-content 
+                                        h1.main_choco treat yourselft 
+                                        h1.main_sensation chocolate delight! 
+                                        a(href="#").main_button  
+                                            button.btn.btn-primary.btn_choco shop now 
+                                    .sensation_img_4.slide-content-img 
+                                        img(src="./assets/marketing/chocolate.png", alt="Sensation Icecream")
+                                    .description.slide-content-2 
+                                        .description_link 
+                                            span.description_link_now 04 / 
+                                            span.description_link_next 04 
+                                        p.description_text Lorem ipsum dolor sit amet, consectetur adipiscing elit. Adipiscing amet, interdum phasellus quis adipiscing leo pellentesque. Arcu enim arcu velit molestie. Mattis libero ornare elementum gravida imperdiet et sit. 
+                                include ../partials/footer.pug    
+
+                        
+
+            
+                
+
+    

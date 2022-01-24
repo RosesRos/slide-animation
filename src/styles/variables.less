@@ -1,0 +1,41 @@
+@font_1: 'Roboto';
+@font_2: 'RobotoBold';
+@white: #fff;
+@background_body:  #110F0F;
+
+//mixins-card_background
+.images {
+    width: 100%;;
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+}
+
+//mixins text 
+.fonts {
+    font-family: @font_2;
+    font-size: 3.6rem;
+    font-weight: 700;
+    line-height: 4.2rem;
+    -webkit-mix-blend-mode: normal;
+    -o-mix-blend-mode: normal;
+    -moz-mix-blend-mode: normal;
+    -ms-mix-blend-mode: normal;
+    mix-blend-mode: normal;
+    -webkit-text-transform: uppercase;
+    -o-text-transform: uppercase;
+    -moz-text-transform: uppercase;
+    -ms-text-transform: uppercase;
+    text-transform: uppercase;
+}
+
+//media queries
+@desktop: 1200px;
+@laptop: 960px;
+@tablet: 768px;
+@mobile: 480px;
+@mobile-landscape: 850px;
+@mobile-sm: 390px;
+@mobile-sm-landscape: 650px;

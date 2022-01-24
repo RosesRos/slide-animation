@@ -1,0 +1,160 @@
+@import "~normalize.css";
+@import "fonts.less";
+@import "variables.less";
+@import "pagination.less";
+@import "header.less";
+@import "footer.less";
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 10px;
+}
+
+
+body {
+    font-family: @font_1, sans-serif;
+    font-size: 16px;
+    color: @white;
+    background: @background_body;
+    &.no-scroll{
+        overflow: hidden;
+    }
+}
+
+.container {
+    max-width: 160rem;
+    padding-left: 0;
+    padding-right: 0;
+    margin: 0 auto;
+}
+
+.slick-dotted.slick-slider {
+    margin-bottom: 0;
+}
+.slick-dots li button:before {
+    color: #242222;
+}
+
+.slick-dots li.slick-active button:before {
+    color: #E9E3E9;
+}
+
+
+@-webkit-keyframes sensation {
+    0% {
+        opacity: 0;
+        transform: translateY(100px);
+        -webkit-transform: translateY(100px);
+    }
+    100% {
+        opacity: 1;
+        transform: none;
+        -webkit-transform: none;
+    }
+}
+@keyframes sensation {
+    0% {
+        opacity: 0;
+        transform: translateY(100px);
+        -webkit-transform: translateY(100px);
+    }
+    100% {
+        opacity: 1;
+        transform: none;
+        -webkit-transform: none;
+    }
+}
+
+.sensation {
+    animation-name: sensation;
+    -webkit-animation-name: sensation;
+}
+
+@-webkit-keyframes sensation2 {
+    0% {
+        opacity: 0;
+        transform: translateX(100px);
+        -webkit-transform: translateX(100px);
+    }
+    100% {
+        opacity: 1;
+        transform: none;
+        -webkit-transform: none;
+    }
+}
+@keyframes sensation2 {
+    0% {
+        opacity: 0;
+        transform: translateX(100px);
+        -webkit-transform: translateX(100px);
+    }
+    100% {
+        opacity: 1;
+        transform: none;
+        -webkit-transform: none;
+    }
+}
+
+.sensation2 {
+    animation-name: sensation2;
+    -webkit-animation-name: sensation2;
+}
+
+@-webkit-keyframes sensation3 {
+    0% {
+        opacity: 0;
+        transform: perspective(100px) rotate(180deg);
+        -webkit-transform: perspective(100px) rotate(180deg);
+    }
+    100% {
+        opacity: 1;
+        transform: none;
+        -webkit-transform: none;
+    }
+}
+@keyframes sensation3 {
+    0% {
+        opacity: 0;
+        transform: perspective(100px) rotate(180deg);
+        -webkit-transform: perspective(100px) rotate(180deg);
+    }
+    100% {
+        opacity: 1;
+        transform: none;
+        -webkit-transform: none;
+    }
+}
+
+.sensation3 {
+    animation-name: sensation3;
+    -webkit-animation-name: sensation3;
+}
+
+.slick-active .slide-content {
+    animation-name: sensation;
+    animation-duration: 2s;
+    opacity: 1;
+    width: 100%;
+    padding: 1rem 2rem 3rem 0;
+}
+
+.slick-active .slide-content-2 {
+    animation-name: sensation2;
+    animation-duration: 2s;
+    opacity: 1;
+    width: 100%;
+    padding: 1rem 2rem 3rem 0;
+}
+
+.slick-active .slide-content-img {
+    animation-name: sensation3;
+    animation-duration: 2s;
+    opacity: 1;
+    width: 100%;
+    padding: 1rem 2rem 3rem 0;
+}
