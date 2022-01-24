@@ -1,6 +1,6 @@
 # slide-animation 
 
-# version [DEMO](https://facesar.github.io/online-TV---league/dist/)
+# version [DEMO](https://facesar.github.io/slide-animation/dist/)
 ## what is inside the package 
 
 - JQUERY 
@@ -12,7 +12,7 @@
 where do i append the image for html page
 1. Open dist/assets 
    
-you can check version [DEMO](https://facesar.github.io/online-TV---league/dist/)
+you can check version [DEMO](https://facesar.github.io/slide-animation/dist/)
 
 
 
