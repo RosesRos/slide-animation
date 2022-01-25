@@ -21,6 +21,10 @@
         padding-right: 2rem;
         padding-top: 2rem;
     }
+    @media (max-width: @mobile-sm) {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
     @media (max-width: @mobile) {
         &.active {
             position: fixed;
@@ -35,6 +39,7 @@
                 display: flex;
                 justify-content: center;
                 flex-direction: column;
+                margin-top: -8rem;
             }
             .header_logo {
                 z-index: 11;
@@ -273,7 +278,6 @@
         display: block;
         width: 100%;
         height: 0.2rem;
-        //margin-bottom: 0.5rem;
         -webkit-background: #C4C4C4;
         -o-background: #C4C4C4;
         -moz-background: #C4C4C4;

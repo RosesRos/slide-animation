@@ -59,12 +59,13 @@
                 }
                 @media (max-width: @mobile) {
                     padding-top: 2rem;
+                    padding-bottom: 5rem;
                 }
                 @media (max-width: @mobile-sm) {
                     padding-top: 0;
                     padding-left: 1rem;
                     padding-right: 1rem;
-                    padding-bottom: 3rem;
+                    padding-bottom: 5rem;
                 }
             }
             .main {
@@ -84,28 +85,28 @@
                     .fonts();
                     color: #BC0BBF;
                     @media (max-width: @mobile) {
-                        font-size: 3rem;
+                        font-size: 2.5rem;
                     }
                 }
                 &_nuts {
                     .fonts();
                     color: #AC3A16;
                     @media (max-width: @mobile) {
-                        font-size: 3rem;
+                        font-size: 2.5rem;
                     }
                 }
                 &_supa {
                     .fonts();
                     color: #AF1119;
                     @media (max-width: @mobile) {
-                        font-size: 3rem;
+                        font-size: 2.5rem;
                     }
                 }
                 &_choco {
                     .fonts();
                     color: #A6765D;
                     @media (max-width: @mobile) {
-                        font-size: 3rem;
+                        font-size: 2.5rem;
                     }
                 }
                 &_sensation {
@@ -135,15 +136,19 @@
                         line-height: 6.5rem;
                     }
                     @media (max-width: @mobile) {
-                        font-size: 6rem;
-                        line-height: 5.5rem;
+                        font-size: 5.2rem;
+                        line-height: 4.5rem;
                     }
                     @media (max-width: @mobile-sm) {
-                        font-size: 5rem;
-                        line-height: 4.5rem;
+                        font-size: 4.5rem;
+                        line-height: 4rem;
                     }
                 }
                 &_button {
+                    -webkit-text-decoration: none;
+                    -o-text-decoration: none;
+                    -moz-text-decoration: none;
+                    -ms-text-decoration: none;
                     text-decoration: none;
                 }
             }
@@ -321,12 +326,20 @@
                         font-family: @font_1;
                         font-size: 1.8rem;
                         line-height: 2.1rem;
+                        -webkit-font-style: normal;
+                        -o-font-style: normal;
+                        -moz-font-style: normal;
+                        -ms-font-style: normal;
                         font-style: normal;
                     }
                 }
                 &_text {
                     font-size: 1.8rem;
                     line-height: 2.5rem;
+                    -webkit-letter-spacing: 0.03em;
+                    -o-letter-spacing: 0.03em;
+                    -moz-letter-spacing: 0.03em;
+                    -ms-letter-spacing: 0.03em;
                     letter-spacing: 0.03em;
                     font-style: normal;
                     font-weight: 400;
@@ -375,6 +388,10 @@
     -moz-border: 1px solid #E9E3E9;
     -ms-border: 1px solid #E9E3E9;
     border: 1px solid #E9E3E9;
+    -webkit-border-radius: 5rem;
+    -o-border-radius: 5rem;
+    -moz-border-radius: 5rem;
+    -ms-border-radius: 5rem;
     border-radius: 5rem;
     -webkit-background: transparent;
     -o-background: transparent;
@@ -390,7 +407,15 @@
     -moz-display: flex;
     -ms-display: flex;
     display: flex;
+    -webkit-align-items: center;
+    -o-align-items: center;
+    -moz-align-items: center;
+    -ms-align-items: center;
     align-items: center;
+    -webkit-justify-content: center;
+    -o-justify-content: center;
+    -moz-justify-content: center;
+    -ms-justify-content: center;
     justify-content: center;
     -webkit-transition: all .2s ease-in-out;
     -o-transition: all .2s ease-in-out;
@@ -495,10 +520,22 @@
             cursor: pointer;
             border-radius: 50%;
             border: 0;
+            -webkit-outline: none;
+            -o-outline: none;
+            -moz-outline: none;
+            -ms-outline: none;
             outline: none;
             &::before {
                 font-size: 1.5rem;
+                -webkit-color: #242222;
+                -o-color: #242222;
+                -moz-color: #242222;
+                -ms-color: #242222;
                 color: #242222;
+                -webkit-opacity: 1;
+                -o-opacity: 1;
+                -moz-opacity: 1;
+                -ms-opacity: 1;
                 opacity: 1;
             }
         }

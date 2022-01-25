@@ -1,12 +1,13 @@
 {
   "name": "form",
   "version": "1.0.0",
-  "description": "slide-animation",
+  "description": "form with js",
   "private": true,
   "scripts": {
     "dev": "cross-env NODE_ENV=development webpack --mode development",
     "build": "cross-env NODE_ENV=production webpack --mode production",
     "watch": "cross-env NODE_ENV=development webpack --mode development --watch",
+    "start": "webpack-dev-server --mode development --open",
     "stats": "webpack --json > stats.json && webpack-bundle-analyzer stats.json"
   },
   "browserslist": "> 0.25%, not dead",
@@ -51,9 +52,13 @@
   },
   "dependencies": {
     "@babel/polyfill": "^7.12.1",
+    "aos": "^2.3.4",
+    "bootstrap": "^4.6.1",
     "expose-loader": "^3.1.0",
     "jquery": "^3.6.0",
     "normalize.css": "^8.0.1",
-    "slick-carousel": "^1.8.1"
+    "popper.js": "^1.16.1",
+    "slick-carousel": "^1.8.1",
+    "swiper": "^7.4.1"
   }
 }
